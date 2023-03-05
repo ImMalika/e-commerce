@@ -1,0 +1,29 @@
+@import  "../../scss/variables.scss";
+
+.footer{
+    width: 100%;
+    background-color: $purple;
+    color: $light;
+    // background-color: rgba(211, 211, 211, 0.387);
+    .foot{
+        padding: 2rem 0 4rem;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+            a{
+                font-size: 1.3rem;             
+            }
+            li{
+                i{
+                    font-size: 1.5rem;
+                    color: $light;
+                }
+            }
+        }
+    }
+}
