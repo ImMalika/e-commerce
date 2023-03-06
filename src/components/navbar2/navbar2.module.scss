@@ -1,0 +1,61 @@
+$darkblue: #060F42;
+$linkColor: #F4F8FB;
+$blue: #01579B;
+.navbar2 {
+    width: 100%;
+    background-color: white;
+    // border-bottom: 1px solid rgba(0, 0, 0, 0.55);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    padding: 1rem 0;
+
+    &__main {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .bars {
+            i {
+                font-size: 2rem;
+                color: $darkblue;
+                cursor: pointer;
+                padding: 0 1rem;
+            }
+        }
+
+        form {
+            width: 60%;
+
+            input {
+                width: 100%;
+                padding: 1rem;
+                font-size: 1rem;
+                background: rgb(255, 255, 255);
+                border: 1px solid #E6E6E6;
+                border-radius: 4px;
+            }
+            .searchicon{
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+                width: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $blue;
+                border: 0;
+                border-radius: 0 4px 4px 0;
+                cursor: pointer;
+                i{
+                    color: $linkColor;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .korzina{
+            cursor: pointer;
+        }
+    }
+}

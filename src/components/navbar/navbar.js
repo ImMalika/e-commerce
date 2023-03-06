@@ -9,22 +9,20 @@ import { NavLink } from "react-router-dom"
 const Navbar = () => {
   return (
     <div className={c.navbar}>
-      <div className={c.nav}>
-        <div className={c.nav_left}>
+      <div className={c.navbar__main}>
+        <div className={c.navbar__main__links}>
           <NavLink to={'/'}>Home</NavLink>
           <NavLink to={'/login'}>Login</NavLink>
           <NavLink to={'/register'}>Register</NavLink>
         </div>
-        <div className={c.nav_right}>
-         
-          <div className={c.lang}>
+        <div className={c.navbar__main__lang}>      
             <span><b>Til : </b></span> 
             <select className={c.select}>
               <option value="uz">Uz</option>
               <option value="en">En</option>
               <option value="ru">Ru</option>
             </select>
-          </div>
+          
           <div className={c.mode}><i class="fa-solid fa-moon"></i></div>
         </div>
       </div>

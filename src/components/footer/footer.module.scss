@@ -1,28 +1,31 @@
-@import  "../../scss/variables.scss";
+$darkblue: #060F42;
+$linkColor: #F4F8FB;
 
 .footer{
     width: 100%;
-    background-color: $purple;
-    color: $light;
-    // background-color: rgba(211, 211, 211, 0.387);
-    .foot{
-        padding: 2rem 0 4rem;
+    background-color: $darkblue;
+    padding: 2rem 0 5rem;
+    &__main{
         width: 80%;
         margin: 0 auto;
+        color: $linkColor;
         display: flex;
+        align-items: flex-start;
         justify-content: space-between;
         ul{
-            display: flex;
-            flex-direction: column;
-            row-gap: 1rem;
-            a{
-                font-size: 1.3rem;             
-            }
+            line-height: 1.8rem;
             li{
-                i{
-                    font-size: 1.5rem;
-                    color: $light;
+                font-size: 1rem;
+                b{
+                    font-size: 1.2rem;
                 }
+            }
+            .network{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                font-size: 2rem;
+                padding: .4rem;
             }
         }
     }
