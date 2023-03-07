@@ -5,6 +5,8 @@ import { NavLink } from "react-router-dom"
 // import Logo from "../../media/logo.png";
 
 // <Link to={'/'} className={c.logo}><img src={Logo} alt="media" /></Link>
+// <NavLink to={'/login'}>Login</NavLink>
+// <NavLink to={'/register'}>Register</NavLink>
 
 const Navbar = () => {
   return (
@@ -12,8 +14,6 @@ const Navbar = () => {
       <div className={c.navbar__main}>
         <div className={c.navbar__main__links}>
           <NavLink to={'/'}>Home</NavLink>
-          <NavLink to={'/login'}>Login</NavLink>
-          <NavLink to={'/register'}>Register</NavLink>
         </div>
         <div className={c.navbar__main__lang}>      
             <span><b>Til : </b></span> 
@@ -23,7 +23,7 @@ const Navbar = () => {
               <option value="ru">Ru</option>
             </select>
           
-          <div className={c.mode}><i class="fa-solid fa-moon"></i></div>
+          <div className={c.navbar__main__lang__mode}><i class="fa-solid fa-moon"></i></div>
         </div>
       </div>
     </div>

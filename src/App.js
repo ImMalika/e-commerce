@@ -1,9 +1,9 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom"
 import { Home } from "./pages/home/home";
-import { Register } from "./pages/register/register";
-import { Login } from "./pages/login/login"
 import { Layout } from './components/layout/layout';
+import { Single } from './pages/single/single';
+import { Categ } from './pages/categ/categ';
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
       <Layout>
         <Routes>
           <Route exact path='/' element={<Home />} />
-          <Route path='/register' element={<Register />} />
-          <Route path='/login' element={<Login />} />
+          <Route path='/categ' element={<Categ />} />
+          <Route path='/singleProduct' element={<Single/>} />
         </Routes>
       </Layout>
 
