@@ -5,8 +5,11 @@ import { NavLink } from "react-router-dom"
 // import Logo from "../../media/logo.png";
 
 // <Link to={'/'} className={c.logo}><img src={Logo} alt="media" /></Link>
-
-const Navbar = () => {
+// import Mode from '../darkmode';
+const Navbar = ({mode,theme}) => {
+  let change =()=>{
+    theme((e)=>(e== "light"? "dark":"light"));
+  };
   return (
     <div className={c.navbar}>
       <div className={c.navbar__main}>
@@ -22,8 +25,10 @@ const Navbar = () => {
               <option value="en">En</option>
               <option value="ru">Ru</option>
             </select>
-          
-          <div className={c.mode}><i class="fa-solid fa-moon"></i></div>
+          {/* <Mode/> */}
+          <div className={c.mode} onClick={()=>change()}><i class="fa-solid fa-moon"></i></div>
+          {/* <button onClick={()=>change()}>{mode}</button> */}
+
         </div>
       </div>
     </div>

@@ -1,9 +1,12 @@
 import c from "./home.module.scss";
-
+import Slider from "../../components/slider";
+// import ProductCard from "../../components/card";
 const Home = () => {
   return (
     <div className={c.home}>
-      Home page
+      <Slider/>
+      
+      {/* <ProductCard></ProductCard> */}
     </div>
   )
 }

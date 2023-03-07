@@ -2,10 +2,10 @@ import React from 'react'
 import Footer from '../footer/footer'
 import Navbar from '../navbar/navbar'
 import Navbar2 from "../navbar2/navbar2"
-const Layout = ({ children }) => {
+const Layout = ({ mode,theme,children }) => {
     return (
-        <div>
-            <Navbar />
+        <div className={mode=='light'?'light':'dark'}>
+            <Navbar theme={theme} mode={mode} />
             <Navbar2 />
             {children}
             <Footer />
