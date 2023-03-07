@@ -3,7 +3,7 @@ import c from "./categs.module.scss";
 import { UseGetData } from '../../utils/hooks/getData';
 
 const Categs = ({ categTitle }) => {
-    const allcategs = UseGetData(["categories"], '/categories');
+    const {data : allcategs, isLoading} = UseGetData(["categories"], '/categories');
     return (
         <div className={c.categswrapper}>
             <button className={c.categTitle}>
@@ -13,4 +13,4 @@ const Categs = ({ categTitle }) => {
     )
 }
 
-export default Categs
+export default Categs;

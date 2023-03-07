@@ -4,7 +4,7 @@ import c from "./cardProd.module.scss";
 const CardProd = () => {
   return (
     <div className={c.CardProd}>
-      Card
+      <div></div>
     </div>
   )
 }
