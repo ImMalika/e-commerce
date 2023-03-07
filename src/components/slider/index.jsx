@@ -20,7 +20,7 @@ function Slider() {
       <img style={contentStyle} src="https://blog.airbaltic.com/wp-content/uploads/2020/01/header-souvenirs.jpg"></img> 
       </div>
       <div>
-      <img style={contentStyle} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Ts_EDhsDlP8y55mSgMPjKa6Dv30ypFNxXA&usqp=CAU"></img> 
+      <img style={contentStyle} src="https://www.shutterstock.com/image-vector/vector-sale-faceted-3d-banner-260nw-572608936.jpg"></img> 
       </div>
       
       <div>

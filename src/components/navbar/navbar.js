@@ -10,13 +10,15 @@ const Navbar = ({mode,theme}) => {
   let change =()=>{
     theme((e)=>(e== "light"? "dark":"light"));
   };
+// <NavLink to={'/login'}>Login</NavLink>
+// <NavLink to={'/register'}>Register</NavLink>
+
+// const Navbar = () => {
   return (
     <div className={c.navbar}>
       <div className={c.navbar__main}>
         <div className={c.navbar__main__links}>
           <NavLink to={'/'}>Home</NavLink>
-          <NavLink to={'/login'}>Login</NavLink>
-          <NavLink to={'/register'}>Register</NavLink>
         </div>
         <div className={c.navbar__main__lang}>      
             <span><b>Til : </b></span> 
@@ -29,6 +31,8 @@ const Navbar = ({mode,theme}) => {
           <div className={c.mode} onClick={()=>change()}><i class="fa-solid fa-moon"></i></div>
           {/* <button onClick={()=>change()}>{mode}</button> */}
 
+          
+          {/* <div className={c.navbar__main__lang__mode}><i class="fa-solid fa-moon"></i></div> */}
         </div>
       </div>
     </div>
