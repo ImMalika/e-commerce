@@ -1,6 +1,7 @@
 import React from 'react'
 import c from "./cardProd.module.scss";
 import Korzina from "../../media/korzinaicon.png";
+import{ Link }from "react-router-dom";
 
 const CardProd = ({imgUrl, title, desc, price,}) => {
   return (
@@ -14,11 +15,11 @@ const CardProd = ({imgUrl, title, desc, price,}) => {
             <span className={c.title}>{title}</span>
             <span className={c.desc}>{desc}</span>
           </div>
-          
+          <br />
           <div className={c.priceWrap}>
             <span className={c.price}>{price}</span>
-            <span><img src={Korzina} alt="Korzina" /></span>
-          </div>
+            </div>
+            <Link to={'/categ'}><span className={c.korzina}><img src={Korzina} alt="Korzina" /></span></Link>
         </div>
 
       </div>

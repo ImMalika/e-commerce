@@ -1,0 +1,13 @@
+.imgDiv {
+    width: 80%;
+    margin: 3rem auto;
+    // border-radius: 20px;
+    height: 300px;
+    img {
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+}

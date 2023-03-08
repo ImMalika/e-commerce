@@ -1,4 +1,3 @@
-import React from 'react'
 import { instance } from "../instance";
 import { useQuery } from "@tanstack/react-query";
 

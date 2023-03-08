@@ -19,8 +19,8 @@ const Navbar = ({mode,theme}) => {
       <div className={c.navbar__main}>
         <div className={c.navbar__main__links}>
           <NavLink to={'/'}>Home</NavLink>
-          <NavLink to={'/mes'}>Message</NavLink>
-          <NavLink to={'/con'}>Contact us</NavLink>
+          <NavLink to={'/'}>Message</NavLink>
+          <NavLink to={'/'}>Contact us</NavLink>
         </div>
         <div className={c.navbar__main__lang}>      
             <span><b>Til : </b></span> 

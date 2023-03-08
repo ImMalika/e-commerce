@@ -1,0 +1,95 @@
+$blue: #01579B;
+
+.single{
+    width: 80%;
+    margin: 0 auto;
+    .singleWrapper{
+        width: 100%;
+        margin: 5rem auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .singleWrapper__left{
+            width: 50%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: .3s all;
+                // &:hover{
+                //     transform: scale(1.05);
+                // }
+            }
+        }
+        .singleWrapper__right{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.3rem;
+            border-radius: 10px;
+            // border: 1px solid lightgray;
+            background-color: rgb(249, 248, 248);
+            padding: 20px;
+            font-size: 1.2rem;
+            hr{
+                border: 1px solid lightgrey;
+                // background-color: aliceblue;
+            }
+            .singleTitle{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                .title{
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                }
+                .desc{
+                    width: 70%;
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+            }
+            .singlePrice{
+                font-size: 1.5rem;
+            }
+            .singleBtns{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                button{
+                    width: 48%;
+                    padding: 1rem;
+                    border: 0;
+                    border: 2px solid rgb(2, 158, 237);
+                    font-size: 1.3rem;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: .3s all;
+                    &:hover{
+                        transform: scale(1.05);
+                    }
+                }
+                .btnBuy{
+                    background-color: rgb(2, 158, 237) ;
+                    color: white;
+                }
+                .btnKor{
+                    background-color: white;
+                    color: rgb(2, 158, 237) ;
+                }
+            }
+        }
+    }
+    .back{
+        width: 25%;
+        margin: 2rem auto;
+        padding: 1rem 10rem;
+        background-color: rgb(232, 230, 230);
+        text-align: center;
+        border: 0;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        cursor: pointer;
+    }
+}

@@ -1,50 +1,77 @@
-.CardProd{
-    height: 450px;
+$blue: #01579B;
+
+.CardProd {
+    // height: 450px;
     width: 300px;
     background-color: white;
-    border: 1px solid grey;
-    border-radius: 20px;
-    padding: 15px;
+    border: 1px solid rgba(234, 230, 230, 0.686);
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    transition: .3s;
-    // box-shadow: ;
-    &:hover{
-        transform: scale(1.02);
-    }
-    .cardTop{
+    position: relative;
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(50, 50, 71, 0.14);
+
+    .cardTop {
         height: 60%;
         width: 100%;
-        img{
+        
+        img {
             height: 100%;
             width: 100%;
             object-fit: cover;
+            transition: .3s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
         }
     }
-    .cardBottom{
+
+    .cardBottom {
         height: 20%;
         width: 100%;
         display: flex;
         flex-direction: column;
-        .titleWrap{
+
+        // position: absolute;
+        // bottom: 1rem;
+        .titleWrap {
             display: flex;
             flex-direction: column;
             line-height: 2rem;
-            .title{
+
+            .title {
                 font-size: 1.4rem;
                 font-weight: 600;
             }
-            .desc{
+
+            .desc {
                 font-size: 1rem;
                 font-weight: 400;
             }
         }
-        .priceWrap{
+
+        .priceWrap {
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
+        }
+
+        .korzina {
+            position: absolute;
+            background-color: rgb(0, 170, 255);
+            width: 45%;
+            height: 60px;
+            bottom: 0;
+            right: 0;
+            border-radius: 10px 0 10px 0;
+            box-shadow: 0px 2px 10px rgba(50, 50, 71, 0.14);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 }
