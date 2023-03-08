@@ -1,9 +1,8 @@
 import React from 'react'
 import c from "./single.module.scss";
-import { useNavigate } from "react-router-dom"
+import Button from '../../components/button/button';
 
 const Single = () => {
-  const nav = useNavigate();
   return (
     <div className={c.single}>
       <div className={c.singleWrapper}>
@@ -26,8 +25,9 @@ const Single = () => {
           </div>
         </div>
         </div>
-        <div onClick={() => nav(-1)} className={c.back}>Back</div>
 
+        
+      <Button buttonTitle={'Back'}/>
 
     </div>
   )

@@ -1,28 +1,13 @@
 @import "../../scss/variables.scss";
-.button {
-	background: $denger;
-	color: $light;
-	border: 4px solid rgba(255, 255, 255, 0);
-	border-radius: $br_r_10;
-	padding: 1% 2%;
-	font-size: 1.3rem;
-	font-family: $font_btn;
-	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.482);
-	position: relative;
-	z-index: 0;
+.back{
+	width: 25%;
+	margin: 2rem auto;
+	padding: 1rem 10rem;
+	background-color: rgb(232, 230, 230);
+	text-align: center;
+	border: 0;
+	border-radius: 10px;
+	font-size: 1.2rem;
+	font-weight: 500;
 	cursor: pointer;
-	&:hover {
-		background: $denger;
-		transform: scale(1.1);
-		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.482);
-		text-shadow: 0px 3px 10px rgb(0, 0, 0);
-		border: 4px solid rgba(255, 0, 0, 0);
-	}
-}
-
-@media (max-width:$xs) {
-	.button {
-	padding: 0.7% 1.5%;
-	font-size: 0.9rem;
-}
 }

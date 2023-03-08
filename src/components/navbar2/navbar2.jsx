@@ -18,8 +18,8 @@ const Navbar2 = () => {
 
                 <Search />
                 <Tel />
-
-                <div className={c.korzina}><img src={Korzina} alt="korzina img" /></div>
+                
+                <div className={c.korzina}><Link to={'/korzinka'}><img src={Korzina} alt="korzina img" /></Link></div>
             </div>
         </div>
     )

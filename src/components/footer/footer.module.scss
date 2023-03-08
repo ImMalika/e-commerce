@@ -1,5 +1,5 @@
-$darkblue: #060F42;
-$linkColor: #F4F8FB;
+
+@import "../../scss/variables.scss";
 
 .footer{
     width: 100%;
@@ -12,6 +12,8 @@ $linkColor: #F4F8FB;
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1.5rem;
         ul{
             line-height: 1.8rem;
             li{
@@ -30,3 +32,63 @@ $linkColor: #F4F8FB;
         }
     }
 }
+
+
+@media(max-width: $xl) {
+    .footer{
+        width: 100%;
+        padding: 2rem 0 5rem;
+        &__main{
+            width: 90%;
+            
+            ul{
+                line-height: 1.8rem;
+                li{
+                    font-size: 1rem;
+                    b{
+                        font-size: 1.2rem;
+                    }
+                }
+                // .network{
+                //     display: flex;
+                //     align-items: center;
+                //     gap: 1rem;
+                //     font-size: 2.5rem;
+                //     padding: .4rem;
+                // }
+            }
+        }
+    }
+    
+}
+
+
+@media(max-width: $xs) {
+    .footer{
+        width: 100%;
+        padding: 2rem 0 5rem;
+        &__main{
+            width: 80%;
+            gap: 2rem;
+            ul{
+                line-height: 1.4rem;
+                li{
+                    font-size: .8rem;
+                    b{
+                        font-size: 1rem;
+                    }
+                }
+                // .network{
+                //     display: flex;
+                //     align-items: center;
+                //     gap: 1rem;
+                //     font-size: 2.5rem;
+                //     padding: .4rem;
+                // }
+            }
+        }
+    }
+    
+}
+
+

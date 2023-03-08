@@ -5,9 +5,12 @@ import { Layout } from './components/layout/layout';
 import { useState } from 'react';
 import { Single } from './pages/single/single';
 import { Categ } from './pages/categ/categ';
+import Korzinka from './pages/korzinka/korzinka';
+import Message from './pages/message/message';
+import Info from './pages/info/info';
 
 function App() {
-   const [theme,setTheme]=useState("light");
+  const [theme, setTheme] = useState("light");
 
   return (
     <div>
@@ -15,7 +18,10 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route path='/categ' element={<Categ />} />
-          <Route path='/singleProduct' element={<Single/>} />
+          <Route path='/singleProduct' element={<Single />} />
+          <Route path='/korzinka' element={<Korzinka />} />
+          <Route path='/message' element={<Message />} />
+          <Route path='/info' element={<Info />} />
         </Routes>
       </Layout>
 
