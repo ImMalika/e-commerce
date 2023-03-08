@@ -1,5 +1,5 @@
 .home {
-    height: 100vh;
+    // height: 100vh;
 
     .allcategs {
         // background-color: red;
@@ -31,4 +31,12 @@
         }
     }
 
+    .allCards{
+        width: 80%;
+        margin: 4rem auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       row-gap: 2rem;
+    }
 }

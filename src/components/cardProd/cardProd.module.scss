@@ -1,0 +1,50 @@
+.CardProd{
+    height: 450px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: .3s;
+    // box-shadow: ;
+    &:hover{
+        transform: scale(1.02);
+    }
+    .cardTop{
+        height: 60%;
+        width: 100%;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .cardBottom{
+        height: 20%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .titleWrap{
+            display: flex;
+            flex-direction: column;
+            line-height: 2rem;
+            .title{
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
+            .desc{
+                font-size: 1rem;
+                font-weight: 400;
+            }
+        }
+        .priceWrap{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+    }
+}
