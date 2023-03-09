@@ -1,4 +1,5 @@
 import React from 'react'
+import Img from '../../components/img/img';
 import {useForm} from "react-hook-form";
 import c from "./message.module.scss";
 function Message() {
@@ -8,7 +9,9 @@ const send=(data)=>{
 }
 console.log(errors);
   return (
+    
     <div className={c.div}>
+      <Img imgUrl={'https://it-tehnik.ru/wp-content/uploads/11-39.jpg'}/>
       <h1 className={c.h1}>Message Us</h1>
       <form className={c.form} onSubmit={handleSubmit(send)}>
         <input className={c.input} type="tel" placeholder="phone Number"{...register("tel",{required:true})} />
@@ -17,6 +20,12 @@ console.log(errors);
         <p>Status:PENDING</p>
         <button className={c.button}>Send</button>
       </form>
+
+
+
+
+      
+
     </div>
   )
 }

@@ -13,11 +13,11 @@ const CardProd = ({imgUrl, title, desc, price,}) => {
         <div className={c.cardBottom}>
           <div className={c.titleWrap}>
             <span className={c.title}>{title}</span>
-            <span className={c.desc}>{desc}</span>
+            <span className={c.desc}>{desc.slice(0,20) + ' ...'}</span>
           </div>
           <br />
           <div className={c.priceWrap}>
-            <span className={c.price}>{price}</span>
+            <span className={c.price}>{price} </span>
             </div>
             <Link to={'/categ'}><span className={c.korzina}><img src={Korzina} alt="Korzina" /></span></Link>
         </div>
