@@ -1,0 +1,70 @@
+/* CSS Code */
+
+/* Style the container */
+
+.div {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Style the heading */
+  .h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #3B3B3B;
+  }
+  
+  /* Style the form */
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Style the input fields */
+  .input[type="tel"], .input[type="text"], .input[type="message"] {
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: #F6F6F6;
+    color: #3B3B3B;
+    font-size: 1.2rem;
+  }
+  
+  /* Style the error messages */
+  .span {
+    color: #ff0000;
+    font-size: 0.8rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Style the status message */
+  .p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #3B3B3B;
+  }
+  
+  /* Style the submit button */
+  .button {
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    background-color: #FFA500;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #3B3B3B;
+    color: #fff;
+  }
+  
