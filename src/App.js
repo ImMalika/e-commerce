@@ -8,6 +8,7 @@ import { Categ } from './pages/categ/categ';
 import Korzinka from './pages/korzinka/korzinka';
 import Message from './pages/message/message';
 import Info from './pages/info/info';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -23,7 +24,8 @@ function App() {
           <Route path='/message' element={<Message />} />
           <Route path='/info' element={<Info />} />
         </Routes>
-      </Layout>
+        <ReactQueryDevtools initialIsOpen={false} />
+              </Layout>
 
     </div>
   );
