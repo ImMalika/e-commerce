@@ -19,6 +19,10 @@ const Footer = () => {
           <li>Сервисный центр v-comp</li>
           <li>Сервисный центр v-comp</li>
           <li>Сервисный центр v-comp</li>
+          <li>Сервисный центр v-comp</li>
+          <li>Сервисный центр v-comp</li>
+          <li>Сервисный центр v-comp</li>
+          <li>Сервисный центр v-comp</li>
 
         </ul>
         <ul>
