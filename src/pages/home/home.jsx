@@ -2,7 +2,7 @@ import Categs from "../../components/categs/categs";
 import c from "./home.module.scss";
 import Slider from "../../components/slider";
 import CardProd from "../../components/cardProd/cardProd";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Img from "../../components/img/img";
 import { useStorage } from "../../utils/store/store";
 import { UseGetData } from "../../utils/hooks/getData";
@@ -10,6 +10,7 @@ import { useState } from "react";
 import Showcase from "./../../components/Showcase/index";
 import line from "../../media/Line.png";
 const Home = () => {
+  const { id } = useParams();
   const [forCategId, setForCategId] = useState("");
   const language = useStorage((state) => state.language);
   const { data: category, isLoading } = UseGetData(
@@ -37,22 +38,26 @@ const Home = () => {
         {products?.data?.map((item) => {
           if (language == "uz") {
             return (
-              <CardProd
-                imgUrl={`http://3.19.30.204/upload/${item?.photo?.path}`}
-                title={item.name_Uz}
-                desc={item.description_Uz}
-                price={item.price + " so'm"}
-              />
+              <Link to={`/single/{id}`}>
+                <CardProd
+                  imgUrl={`http://3.19.30.204/upload/${item?.photo?.path}`}
+                  title={item.name_Uz}
+                  desc={item.description_Uz}
+                  price={item.price + " so'm"}
+                />
+              </Link>
             );
           }
           if (language == "ru") {
             return (
-              <CardProd
-                imgUrl={`http://3.19.30.204/upload/${item?.photo?.path}`}
-                title={item.name_Ru}
-                desc={item.description_Ru}
-                price={item.price + " сум"}
-              />
+              <Link to={`/single/${id}`}>
+                <CardProd
+                  imgUrl={`http://3.19.30.204/upload/${item?.photo?.path}`}
+                  title={item.name_Ru}
+                  desc={item.description_Ru}
+                  price={item.price + " сум"}
+                />
+              </Link>
             );
           }
           if (language == "en") {
@@ -90,15 +95,15 @@ const Home = () => {
                   desc={item.description_Uz}
                   price={item.price + " so'm"}
                 />
-              )).splice(0,4)}
+              )).splice(0, 4)}
           </div>
         </div>
       </div>
-      {/* <Img
+      <Img
         imgUrl={
           "https://topsto-crimea.ru/images/detailed/5334/1637931163.2886.jpg"
         }
-      /> */}
+      />
     </div>
   );
 };

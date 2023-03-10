@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route path='/categ' element={<Categ />} />
-          <Route path='/singleProduct' element={<Single />} />
+          <Route path='/single/:id' element={<Single />} />
           <Route path='/korzinka' element={<Korzinka />} />
           <Route path='/message' element={<Message />} />
           <Route path='/info' element={<Info />} />
