@@ -50,7 +50,7 @@ const Home = () => {
           }
           if (language == "ru") {
             return (
-              <Link to={`/single/${id}`}>
+              <Link to={`/single/{id}`}>
                 <CardProd
                   imgUrl={`http://3.19.30.204/upload/${item?.photo?.path}`}
                   title={item.name_Ru}
@@ -62,12 +62,14 @@ const Home = () => {
           }
           if (language == "en") {
             return (
-              <CardProd
-                imgUrl={`http://3.19.30.204/upload/${item?.photo?.path}`}
-                title={item.name_En}
-                desc={item.description_En}
-                price={item.price + " so'm"}
-              />
+              <Link to={`/single/{id}`}>
+                <CardProd
+                  imgUrl={`http://3.19.30.204/upload/${item?.photo?.path}`}
+                  title={item.name_En}
+                  desc={item.description_En}
+                  price={item.price + " so'm"}
+                />
+              </Link>
             );
           }
         })}
