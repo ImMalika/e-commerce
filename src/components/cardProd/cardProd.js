@@ -4,6 +4,7 @@ import Korzina from "../../media/korzinaicon.png";
 import{ Link }from "react-router-dom";
 
 const CardProd = ({imgUrl, title, desc, price,}) => {
+  
   return (
     <div className={c.CardProd}>
       <div>

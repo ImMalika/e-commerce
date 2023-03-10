@@ -5,7 +5,11 @@ import c from "./korzinka.module.scss"
 const Korzinka = () => {
     return (
         <div className={c.korzinka}>
-            <Button buttonTitle={'Back'}/>
+            <div className={c.container}>
+                <div className={c.wrapper}>
+                    
+                </div>
+            </div>
         </div>
     )
 }

@@ -2,11 +2,10 @@ $blue: #01579B;
 
 .CardProd {
     margin: 0 auto;
-    // height: 450px;
-    width: 300px;
+    width: 270px;
     background-color: white;
     border: 1px solid rgba(234, 230, 230, 0.686);
-    border-radius: 10px;
+    border-radius: 3px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -14,7 +13,7 @@ $blue: #01579B;
     position: relative;
     padding: 20px;
     box-shadow: 0px 2px 10px rgba(50, 50, 71, 0.14);
-
+    margin: 10px 20px;
     .cardTop {
         height: 60%;
         width: 100%;
@@ -32,6 +31,7 @@ $blue: #01579B;
     }
 
     .cardBottom {
+        padding: 30px 20px;
         height: 20%;
         width: 100%;
         display: flex;
@@ -63,7 +63,7 @@ $blue: #01579B;
 
         .korzina {
             position: absolute;
-            background-color: rgb(0, 170, 255);
+            background-color: #01579B;
             width: 45%;
             height: 60px;
             bottom: 0;

@@ -17,16 +17,5 @@ export { Network};
 
 // ----------
 
-const Tel = () => {
-  return (
-    <div>
-        <div className={c.phone}>
-        <a href="tel:+998 99 999 99 99">+998 99 999 99 99</a><br />
-        <a href="tel:+998 99 999 99 99">+998 99 999 99 99</a>
-        </div>
-    </div>
-  )
-}
 
-export  {Tel}
 

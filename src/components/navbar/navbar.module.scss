@@ -16,7 +16,9 @@
 .navbar {
     width: 100%;
     background-color: $darkblue;
-
+    height: 55px;
+    
+    top: 0;
     &__main {
         width: 80%;
         margin: 0 auto;
@@ -24,7 +26,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
+        
+        height: 100%;
         &__links {
             width: 40%;
             display: flex;
@@ -41,12 +44,12 @@
         }
 
         &__lang {
+            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 2rem;
             color: $linkColor;
-           
             &__mode {
                 i{
                     color: $linkColor;

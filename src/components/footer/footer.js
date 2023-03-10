@@ -23,7 +23,6 @@ const Footer = () => {
         </ul>
         <ul>
           <li><b>Контакты</b></li>
-            <Tel />
         </ul>
         <ul>
           <li><b>Следите за нами</b></li>
