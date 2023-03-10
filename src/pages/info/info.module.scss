@@ -1,43 +1,106 @@
-/* Styles for info component */
+
+.both{
+  // width: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
 .info {
-    display: flex;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+// background-color: antiquewhite;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+
+.left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 50px;
+  align-items: center;
+}
+
+.right {
+  width: 50%;
+  flex: 1;
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.phoneN, .address, .emaill, .telegramm, .instagramm, .addresM {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #444;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.phoneN i,
+.address i,
+.emaill i,
+.telegramm i,
+.instagramm i,
+.addresM i {
+  margin-right: 10px;
+  color:#060F42;
+}
+
+.phoneN:hover i,
+.address:hover i,
+.emaill:hover i,
+.telegramm:hover i,
+.instagramm:hover i,
+.addresM:hover i {
+  color: #a80036;
+}
+
+.phoneN:hover,
+.address:hover,
+.emaill:hover,
+.telegramm:hover,
+.instagramm:hover,
+.addresM:hover {
+  color: #a80036;
+}
+
+.addresM {
+  color: #060F42;
+}
+
+.addresM i {
+  color: #060F42;
+}
+
+.addresM:hover {
+  color: #a80036;
+}
+
+.addresM:hover i {
+  color: #a80036;
+}
+}
+
+
+@media only screen and (max-width: 768px) {
+  .info {
     flex-direction: column;
-    align-items: center;
+    padding: 30px;
   }
-  
-  /* Styles for phone number */
-  .phoneN {
-    margin-top: 20px;
-    font-size: 18px;
+
+  .left {
+    margin-right: 0;
+    margin-bottom: 30px;
   }
-  
-  /* Styles for address */
-  .address {
-    margin-top: 20px;
-    font-size: 18px;
+
+  .right {
+    height: 300px;
+    margin-bottom: 30px;
   }
-  
-  /* Styles for address map */
-  .addressM {
-    margin-top: 20px;
-    font-size: 18px;
-  }
-  
-  /* Styles for email */
-  .emaill {
-    margin-top: 20px;
-    font-size: 18px;
-  }
-  
-  /* Styles for telegram */
-  .telegramm {
-    margin-top: 20px;
-    font-size: 18px;
-  }
-  
-  /* Styles for Instagram */
-  .instagramm {
-    margin-top: 20px;
-    font-size: 18px;
-  }
-  
+}
