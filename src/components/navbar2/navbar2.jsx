@@ -42,7 +42,7 @@ const Navbar2 = () => {
             </Link>
           </div>
 
-          <Button
+          {/* <Button
           className={c.nonee}
             variant="contained"
             style={{
@@ -62,12 +62,12 @@ const Navbar2 = () => {
               src={katalog}
               alt=""
             />
-          </Button>
+          </Button> */}
         </div>
         <div className={c.item2}>
           {/* <Search /> */}
             
-              {/* <Dropdown
+              <Dropdown
             
             menu={{
 
@@ -85,7 +85,7 @@ const Navbar2 = () => {
                 <VscChevronDown></VscChevronDown>
               </Space>
             </Typography.Link>
-          </Dropdown> */}
+          </Dropdown>
          
           
           <div className={c.korzina}>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import c from "./navbar.module.scss";
 // import "./navbar.css"
 import { Switch, Tabs } from "antd";
@@ -22,6 +22,7 @@ const Navbar = ({ mode, theme }) => {
   const onChange2 = (key) => {
     nav(key);
   };
+  const navbarRef = useRef()
   const items = [
     {
       key: "uz",
@@ -53,17 +54,16 @@ const Navbar = ({ mode, theme }) => {
   return (
     <div className={c.navbar}>
       <div className={c.navbar__main}>
-        <div className={c.navbar__main__links}>
-          <Tabs 
-            defaultActiveKey="1"
-            items={items2}
-            onChange={onChange2}
-            style={{
-              color: "white",
-            }}
-          />
-          
+        <div className={c.navbar__main__links} ref = {navbarRef}>
+          <NavLink to={'/'}>Home</NavLink>
+          <NavLink to={'/message'}>Message</NavLink>
+          <NavLink to={'/info'}>Contact us</NavLink>
         </div>
+        <div class={c.label2} onClick = {()=>navbarRef.current.style.display = 'block '}></div>
+
+<div class={c.label1} >
+  <i class="fa-solid fa-bars"></i>
+</div>
         <div className={c.navbar__main__lang}>
           <Tabs
             defaultActiveKey={language}

@@ -40,7 +40,7 @@ const Home = () => {
         {products?.data?.map((item) => {
           if (language == "uz") {
             return (
-              <Link to={`/single/{id}`}>
+              <Link to={`/${item.id}`}>
                 <CardProd
                   imgUrl={`http://3.19.30.204/upload/${item?.photo?.path}`}
                   title={item.name_Uz}
@@ -52,7 +52,7 @@ const Home = () => {
           }
           if (language == "ru") {
             return (
-              <Link to={`/single/{id}`}>
+              <Link to={`/${item.id}`}>
                 <CardProd
                   imgUrl={`http://3.19.30.204/upload/${item?.photo?.path}`}
                   title={item.name_Ru}
@@ -64,7 +64,7 @@ const Home = () => {
           }
           if (language == "en") {
             return (
-              <Link to={`/single/{id}`}>
+              <Link to={`/${item.id}`}>
                 <CardProd
                   imgUrl={`http://3.19.30.204/upload/${item?.photo?.path}`}
                   title={item.name_En}

@@ -4,8 +4,13 @@ import { useMutation } from "@tanstack/react-query";
 export const UsePostData = (url)=>{
     return useMutation((data)=>instance.post(url, data));
 };
+// const UsePost=(url)=>{
+//     return axios.post(`http://3.19.30.204/api#/Message`),message
+// }
 
-
+// export const useAdd=()=>{
+//     return useMutation(addData)
+// }
 
 
 

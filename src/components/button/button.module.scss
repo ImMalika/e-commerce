@@ -2,7 +2,7 @@
 .back{
 	width: 25%;
 	margin: 2rem auto;
-	padding: 1rem 10rem;
+	padding: 1rem;
 	background-color: rgb(232, 230, 230);
 	text-align: center;
 	border: 0;
@@ -11,3 +11,23 @@
 	font-weight: 500;
 	cursor: pointer;
 }
+
+@media (max-width: $md) {
+	.back{
+		width: 30%;
+		padding: .6rem 1rem;
+		border: 0;
+		font-size: 1rem;
+	}
+}
+
+
+@media (max-width: $xs) {
+	.back{
+		width: 30%;
+		padding: .6rem 1rem;
+		border: 0;
+		font-size: 1rem;
+	}
+}
+
