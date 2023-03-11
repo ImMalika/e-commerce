@@ -7,7 +7,7 @@ import { Single } from './pages/single/single';
 import { Categ } from './pages/categ/categ';
 import Korzinka from './pages/korzinka/korzinka';
 import Message from './pages/message/message';
-import Info from './pages/info/info';
+import Info2 from './pages/info2';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
 function App() {
@@ -22,11 +22,10 @@ function App() {
           <Route path='/single/:id' element={<Single />} />
           <Route path='/korzinka' element={<Korzinka />} />
           <Route path='/message' element={<Message />} />
-          <Route path='/info' element={<Info />} />
+          <Route path='/info' element={<Info2/>} />
         </Routes>
         <ReactQueryDevtools initialIsOpen={false} />
-              </Layout>
-
+      </Layout>
     </div>
   );
 }

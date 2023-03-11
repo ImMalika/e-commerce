@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import c from "./navbar2.module.scss";
 import Logo from "../../media/Logo1.png";
 import Korzina from "../../media/korzinaicon.png";
@@ -14,6 +14,10 @@ import { VscChevronDown } from "react-icons/vsc";
 import { Dropdown, Space, Typography } from "antd";
 
 const Navbar2 = () => {
+  
+  // useEffect(()=>{
+  //   console.log(window.innerHeight);
+  // },[window.innerHeight])
   const language = useStorage((state) => state.language);
   const getInformation = UseGetData(["/getinformation"], "/information");
   const context = useContext(AppContext);
@@ -39,6 +43,7 @@ const Navbar2 = () => {
           </div>
 
           <Button
+          className={c.nonee}
             variant="contained"
             style={{
               background: "#06A56C",
@@ -61,9 +66,11 @@ const Navbar2 = () => {
         </div>
         <div className={c.item2}>
           {/* <Search /> */}
-          <Dropdown
+            
+              {/* <Dropdown
             
             menu={{
+
               items: item?.phone?.map((item, index) => ({
                 key: index + 1,
                 label: item,
@@ -78,7 +85,9 @@ const Navbar2 = () => {
                 <VscChevronDown></VscChevronDown>
               </Space>
             </Typography.Link>
-          </Dropdown>
+          </Dropdown> */}
+         
+          
           <div className={c.korzina}>
             <Link to={"/korzinka"}>
               <img style={{

@@ -6,15 +6,30 @@ import { BiAlignLeft } from "react-icons/bi";
 import { AiOutlineRight } from "react-icons/ai";
 import { useStorage } from "./../../utils/store/store";
 import { ShowIcons } from "./../../utils/ShowIcons";
+import Img1 from "../../media/img1.jpg";
+import Img2 from "../../media/img2.jpg";
+import Img3 from "../../media/img3.jpg";
+import Img4 from "../../media/img4.png";
 import nouts from "../../media/nouts.jpg";
 import { Button } from "@mui/material";
+import { Carousel } from 'antd';
+const contentStyle = {
+  height: '50vh',
+  color: '#fff',
+  lineHeight: '160px',
+  textAlign: 'center',
+  background: '#364d79',
+};
+
+
 export default function Showcase() {
   const getCategory = UseGetData(["getCategory"], `/category`);
   const context = useContext(AppContext);
   const menuRef = useRef();
   const [id, setId] = useState(1);
   const language = useStorage((state) => state.language);
-  console.log(getCategory);
+  // console.log(getCategory);
+
   const bis = [
     {
       id: 1,
@@ -75,7 +90,7 @@ export default function Showcase() {
         "We want only comfort and coziness for your home! We have been making people happy for 5 years.",
     },
   ];
-  console.log(id);
+  // console.log(id);
   return (
     <div className={styles.Showcase}>
       <div className={styles.container}>
@@ -96,103 +111,24 @@ export default function Showcase() {
             ))}
           </div>
           <div className={styles.banner}>
-            <div className={styles.item1}>
-              <div className={styles.Buttons}>
-                <Button
-                  onClick={() => setId((prev) => (prev >= 1 ? prev - 1 : 4))}
-                >
-                  {" "}
-                  {"<"}{" "}
-                </Button>
-                <Button
-                  onClick={() => setId((prev) => (prev < 5 ? prev + 1 : 1))}
-                >
-                  {" "}
-                  {">"}{" "}
-                </Button>
+
+            <Carousel autoplay>
+              <div className={styles.img}>
+                <img src={nouts} alt="media" />
               </div>
-              <img src={nouts} alt="" />
-              <div className={styles.div}>
-                {id ? (
-                  <>
-                    {language == "en" && (
-                      <>
-                        {id > 1 ? (
-                          <>
-                            <h1>{texts?.[id - 1]?.text_En}</h1>
-                            <p>{texts?.[id - 1]?.description_En}</p>
-                          </>
-                        ) : (
-                          <>
-                            <h1>{texts?.[3]?.text_En}</h1>
-                            <p>{texts?.[3]?.description_Uz}</p>
-                          </>
-                        )}
-                      </>
-                    )}
-                    {language == "ru" && (
-                      <>
-                        {id > 1 ? (
-                          <>
-                            <h1>{texts?.[id - 1]?.text_Ru}</h1>
-                            <p>{texts?.[id - 1]?.description_Ru}</p>
-                          </>
-                        ) : (
-                          <>
-                            <h1>{texts?.[3]?.text_Ru}</h1>
-                            <p>{texts?.[3]?.description_Ru}</p>
-                          </>
-                        )}
-                      </>
-                    )}
-                    {language == "uz" && (
-                      <>
-                        {id > 1 ? (
-                          <>
-                            <h1>{texts?.[id - 1]?.text_Uz}</h1>
-                            <p>{texts?.[id - 1]?.description_Uz}</p>
-                          </>
-                        ) : (
-                          <>
-                            <h1>{texts?.[3]?.text_Uz}</h1>
-                            <p>{texts?.[3]?.description_Uz}</p>
-                          </>
-                        )}
-                      </>
-                    )}
-                  </>
-                ) : (
-                  <>
-                    {language == "uz" && (
-                      <>
-                        <h1>{texts?.[0]?.text_Uz}</h1>
-                        <p>{texts?.[0]?.description_Uz}</p>
-                      </>
-                    )}
-                    {language == "ru" && (
-                      <>
-                        <h1>{texts?.[0]?.text_Ru}</h1>
-                        <p>{texts?.[0]?.description_Ru}</p>
-                      </>
-                    )}
-                    {language == "en" && (
-                      <>
-                        <h1>{texts?.[0]?.text_En}</h1>
-                        <p>{texts?.[0]?.description_En}</p>
-                      </>
-                    )}
-                  </>
-                )}
+              <div className={styles.img}>
+                <img src={nouts} alt="media" />
               </div>
-              <div className={styles.bis}>
-                {bis.map((item) => (
-                  <b
-                    className={item.id == id && styles.activeB}
-                    onClick={() => setId(item.id)}
-                  ></b>
-                ))}
+              <div className={styles.img}>
+                <img src={nouts} alt="media" />
               </div>
-            </div>
+              <div className={styles.img}>
+                <img src={nouts} alt="media" />
+              </div>
+            </Carousel>
+
+
+
             <div className={styles.item2}>
               {ShowIcons.map((item) => (
                 <div className={styles.iconImgs}>

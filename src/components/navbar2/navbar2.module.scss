@@ -19,7 +19,9 @@ $blue: #01579b;
         height: 100%;
         display: flex;
         gap: 20px;
+
     }
+    
     .item2{
         width: 50%;
         height: 100%;
@@ -58,4 +60,14 @@ $blue: #01579b;
       cursor: pointer;
     }
   }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo{
+    display: none;
+  }
+ 
+
+ 
+  
 }

@@ -36,9 +36,8 @@
             gap: 1.2rem;
             
             a {
-                border-radius: 10px;
                 padding: .5rem;
-                font-size: 1.1rem;
+                font-size: 3.1rem;
                 color: $linkColor;
             }
         }
@@ -59,3 +58,11 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    
+}
+
+
+
+
