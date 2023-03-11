@@ -54,15 +54,9 @@ const Navbar = ({ mode, theme }) => {
     <div className={c.navbar}>
       <div className={c.navbar__main}>
         <div className={c.navbar__main__links}>
-          <Tabs 
-            defaultActiveKey="1"
-            items={items2}
-            onChange={onChange2}
-            style={{
-              color: "white",
-            }}
-          />
-          
+          <NavLink to={'/'}>Home</NavLink>
+          <NavLink to={'/message'}>Message</NavLink>
+          <NavLink to={'/info'}>Contact us</NavLink>
         </div>
         <div className={c.navbar__main__lang}>
           <Tabs

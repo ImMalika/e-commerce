@@ -37,7 +37,7 @@
             
             a {
                 padding: .5rem;
-                font-size: 3.1rem;
+                font-size: 1.1rem;
                 color: $linkColor;
             }
         }
@@ -58,3 +58,100 @@
         }
     }
 }
+
+
+@media (max-width: $lg) {
+    .navbar {
+        width: 100%;
+        background-color: $darkblue;
+        height: 55px;
+        
+        top: 0;
+        &__main {
+            width: 95%;
+            margin: 0 auto;
+            padding: .9rem .5rem;
+            // display: flex;
+            // align-items: center;
+            // justify-content: space-between;
+            
+            height: 100%;
+            &__links {
+                width: 50%;
+                // display: flex;
+                // align-items: center;
+                // justify-content: flex-start;
+                gap: 1rem;
+                
+                a {
+                    padding: .5rem;
+                    font-size: .9rem;
+                }
+            }
+    
+            &__lang {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                color: $linkColor;
+                &__mode {
+                    i{
+                        color: $linkColor;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:  $sm) {
+    .navbar {
+        width: 100%;
+        background-color: $darkblue;
+        height: 55px;
+        
+        top: 0;
+        &__main {
+            width: 95%;
+            margin: 0 auto;
+            padding: .9rem .5rem;
+            // display: flex;
+            // align-items: center;
+            // justify-content: space-between;
+            
+            height: 100%;
+            &__links {
+                width: 50%;
+                // display: flex;
+                // align-items: center;
+                // justify-content: flex-start;
+                gap: 1rem;
+                
+                a {
+                    padding: .5rem;
+                    font-size: .9rem;
+                }
+            }
+    
+            &__lang {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                color: $linkColor;
+                &__mode {
+                    i{
+                        color: $linkColor;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
