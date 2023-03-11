@@ -18,8 +18,8 @@ function App() {
       <Layout mode={theme} theme={setTheme}>
         <Routes>
           <Route exact path='/' element={<Home />} />
+          <Route path='/:id' element={<Single />} />
           <Route path='/categ' element={<Categ />} />
-          <Route path='/single/:id' element={<Single />} />
           <Route path='/korzinka' element={<Korzinka />} />
           <Route path='/message' element={<Message />} />
           <Route path='/info' element={<Info />} />
