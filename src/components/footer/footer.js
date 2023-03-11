@@ -10,8 +10,6 @@ const Footer = () => {
           <li>Акции</li>
           <li>Акции</li>
           <li>Акции</li>
-          <li>Акции</li>
-          <li>Акции</li>
         </ul>
         <ul>
           <li><b>Услуги и сервисы</b></li>
@@ -20,9 +18,7 @@ const Footer = () => {
           <li>Сервисный центр v-comp</li>
           <li>Сервисный центр v-comp</li>
         </ul>
-        <ul>
-          <li><b>Контакты</b></li>
-        </ul>
+       
         <ul>
           <li><b>Следите за нами</b></li>
           <Network />

@@ -25,8 +25,7 @@ function App() {
           <Route path='/info' element={<Info />} />
         </Routes>
         <ReactQueryDevtools initialIsOpen={false} />
-              </Layout>
-
+      </Layout>
     </div>
   );
 }

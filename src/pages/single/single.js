@@ -1,8 +1,13 @@
 import React from 'react'
 import c from "./single.module.scss";
 import Button from '../../components/button/button';
+import { useParams } from 'react-router-dom';
+import { UseGetData } from '../../utils/hooks/getData';
 
 const Single = () => {
+  const { id } = useParams();
+  const {data} = UseGetData(['products', id], `/products/{id}`);
+  console.log(data);
   return (
     <div className={c.single}>
       <div className={c.singleWrapper}>
@@ -24,10 +29,10 @@ const Single = () => {
             <button className={c.btnBuy}>Bir klikda xarid qilish</button>
           </div>
         </div>
-        </div>
+      </div>
 
-        
-      <Button buttonTitle={'Back'}/>
+
+      <Button buttonTitle={'Back'} />
 
     </div>
   )

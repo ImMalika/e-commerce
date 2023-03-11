@@ -54,7 +54,7 @@ const Navbar = ({ mode, theme }) => {
     <div className={c.navbar}>
       <div className={c.navbar__main}>
         <div className={c.navbar__main__links}>
-          <Tabs
+          <Tabs 
             defaultActiveKey="1"
             items={items2}
             onChange={onChange2}
@@ -62,7 +62,7 @@ const Navbar = ({ mode, theme }) => {
               color: "white",
             }}
           />
-          ;
+          
         </div>
         <div className={c.navbar__main__lang}>
           <Tabs
