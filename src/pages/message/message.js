@@ -20,8 +20,7 @@ console.log(errors);
         <input className={c.input} type="message" placeholder="message" {...register("message",{required:true})}/>
         <button className={c.button}>Send</button>
       </form>
-
-
+    
 
 
       

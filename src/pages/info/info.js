@@ -2,10 +2,24 @@ import React from 'react'
 import c from "./info.module.scss"
 import Img from '../../components/img/img';
 import  { useState } from 'react';
-
+import { UseGetData } from "../../utils/hooks/getData";
 const Info = ({phone,address,addressMap,email,telegram,instagram}) => {
+
+  const {data: information, isLoading, isError} = UseGetData(["information"], '/information');
+  console.log(information, 1111111);
+  
+
+  
   return (
-    <div className={c.both}><Img imgUrl={'https://www.dbs.com/iwov-resources/images/foundation/about-us/contact-hero.jpg'}/>
+    
+
+
+
+
+
+    <div className={c.both}>
+     
+      <Img imgUrl={'https://www.dbs.com/iwov-resources/images/foundation/about-us/contact-hero.jpg'}/>
     <div className={c.info}>
 
 <div className={c.left}>
