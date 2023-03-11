@@ -8,7 +8,10 @@ let store = (set) => ({
     korzina : [],
     addKorzina : (product)=>set((state)=>({
         korzina : [...state.korzina,product]
-    }))
+    })),
+    removeKorinza : (id)=>set((state)=>({
+        korzina : state.korzina.filter(i=>i.id != id)
+    })),
 })
 
 store = persist(store, { name: 'nmadrlar' })
